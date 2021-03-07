@@ -13,7 +13,7 @@ defmodule MakeupDemo.Languages do
   def highlight_html(source, lexer, style) do
     tokens = apply(lexer, :lex, [source])
     css_class = "highlight-" <> style.short_name
-    HTMLFormatter.format(tokens, css_class)
+    HTMLFormatter.format_as_iolist(tokens, [{:css_class, css_class}])
   end
 
   def all_stylesheets() do
@@ -42,35 +42,11 @@ defmodule MakeupDemo.Languages do
       lexer: Makeup.Lexers.ElixirLexer,
       intro: ""
     },
-    %{name: "HTML5",
-      title: "HTML5 Language",
-      slug: "html5",
-      lexer: Makeup.Lexers.HTML5Lexer,
-      intro: """
-      <p>
-        HTML5 is extremely liberal regarding what is valid HTML5.
-        This lexer tries to recognize a sensible subset
-        (and in certain aspects it's even more permissive than HTML5 itself) 
-      </p>
-
-      <p>
-        The lexer is smart, and tries to match the opening and closing tags
-        of an HTML element.
-
-        It is in act an HTML parser, and not only a lexer.
-
-        It will render the text inside an HTML element accoring to the tag name.
-
-        For example, the text inside a <code>&lt;em&gt;&lt;/em&gt;</code> element
-        will be <em>italic</em> and the element inside a
-        <code>&lt;strong&gt;&lt;/strong&gt;</code> element will be <strong>bold</strong>.
-
-        Take a look, for example, at the <a href="#tango">Tango</a> and the
-        <a href="#colorful">Colorful</a> styles.
-
-        In the future, hyperlinks will be underlined.
-      </p>
-      """
+    %{name: "HTML",
+      title: "HTML Language",
+      slug: "html",
+      lexer: Makeup.Lexers.HTMLLexer,
+      intro: ""
     }
   ]
 

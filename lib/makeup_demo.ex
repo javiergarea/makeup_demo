@@ -1,5 +1,5 @@
 defmodule MakeupDemo do
-  def make() do
+  def main(_args) do
     output_dir = "website"
     # Create the output dir if it doesn't exist already
     File.mkdir_p!(output_dir)
@@ -24,7 +24,7 @@ defmodule MakeupDemo do
       )
     end
 
-    IO.puts("Done.")
+    IO.puts("Generated demo!")
     :ok
   end
 end

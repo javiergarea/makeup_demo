@@ -1,8 +1,12 @@
-%{"earmark": {:hex, :earmark, "1.2.3", "206eb2e2ac1a794aa5256f3982de7a76bf4579ff91cb28d0e17ea2c9491e46a4", [:mix], []},
-  "ex_const": {:hex, :ex_const, "0.1.0", "7b04d0b65f00cfb8afc0b778bd58dec4804612a54f57122524ee097e9f2c5443", [:mix], []},
-  "ex_spirit": {:hex, :ex_spirit, "0.3.3", "89bd061c68a63b8a4321d768d87e918a7ba60f5a044e5961b14544d1f062901d", [:mix], []},
-  "exconstructor": {:hex, :exconstructor, "1.1.0", "272623a7b203cb2901c20cbb92c5c3ab103cc0087ff7c881979e046043346752", [:mix], []},
-  "html_entities": {:hex, :html_entities, "0.3.0", "2f278ffc69c3f0cbd5996628fef37cf922fa715f3e04b9f38924c8adced3f25a", [:mix], []},
-  "makeup": {:hex, :makeup, "0.2.0", "558327c02cd4bc75e54d6aa2e31752c0a906eb4b40b392237921348c4ce455a9", [:mix], [{:ex_const, "~> 0.1.0", [hex: :ex_const, optional: false]}, {:ex_spirit, "~> 0.3.0", [hex: :ex_spirit, optional: false]}, {:exconstructor, "~> 1.1.0", [hex: :exconstructor, optional: false]}, {:html_entities, "~> 0.3.0", [hex: :html_entities, optional: false]}]},
-  "makeup_elixir": {:hex, :makeup_elixir, "0.2.0", "2a16854b9ecc44386241b03e2be50b83d0cdeac38c1cbeed1b16812238443f3a", [:mix], [{:makeup, "0.2.0", [hex: :makeup, optional: false]}]},
-  "makeup_html5": {:hex, :makeup_html5, "0.2.0", "5d9e82632d58d206e9157b62a925cb8b828382c51b0d4f4965986f873fd2ba07", [:mix], [{:makeup, "~> 0.2.0", [hex: :makeup, optional: false]}]}}
+%{
+  "earmark": {:hex, :earmark, "1.2.3", "206eb2e2ac1a794aa5256f3982de7a76bf4579ff91cb28d0e17ea2c9491e46a4", [:mix], []},
+  "ex_const": {:hex, :ex_const, "0.1.0", "7b04d0b65f00cfb8afc0b778bd58dec4804612a54f57122524ee097e9f2c5443", [:mix], [], "hexpm", "7c17c83d9c2d167884610a118ae7206e5313e54369690bfd8fe7ac37077e08e6"},
+  "ex_spirit": {:hex, :ex_spirit, "0.3.3", "89bd061c68a63b8a4321d768d87e918a7ba60f5a044e5961b14544d1f062901d", [:mix], [], "hexpm", "2bdde7d5e93a4aad71ef8eb518ae92c19ece98a52eafb6b209fad9caebd207b8"},
+  "exconstructor": {:hex, :exconstructor, "1.1.0", "272623a7b203cb2901c20cbb92c5c3ab103cc0087ff7c881979e046043346752", [:mix], [], "hexpm", "0edd55e8352e04dabf71f35453a57650175c7d7e6af707b1d3df610e5052afe0"},
+  "html_entities": {:hex, :html_entities, "0.3.0", "2f278ffc69c3f0cbd5996628fef37cf922fa715f3e04b9f38924c8adced3f25a", [:mix], [], "hexpm", "93811511394efeee964f6e7df3b72b37ad39c1d185030c3561aebf1c15c4d995"},
+  "makeup": {:hex, :makeup, "1.0.5", "d5a830bc42c9800ce07dd97fa94669dfb93d3bf5fcf6ea7a0c67b2e0e4a7f26c", [:mix], [{:nimble_parsec, "~> 0.5 or ~> 1.0", [hex: :nimble_parsec, repo: "hexpm", optional: false]}], "hexpm", "cfa158c02d3f5c0c665d0af11512fed3fba0144cf1aadee0f2ce17747fba2ca9"},
+  "makeup_elixir": {:hex, :makeup_elixir, "0.15.1", "b5888c880d17d1cc3e598f05cdb5b5a91b7b17ac4eaf5f297cb697663a1094dd", [:mix], [{:makeup, "~> 1.0", [hex: :makeup, repo: "hexpm", optional: false]}, {:nimble_parsec, "~> 1.1", [hex: :nimble_parsec, repo: "hexpm", optional: false]}], "hexpm", "db68c173234b07ab2a07f645a5acdc117b9f99d69ebf521821d89690ae6c6ec8"},
+  "makeup_html": {:git, "https://github.com/javiergarea/makeup_html", "1f95c5cb0d9b5be50916af5bd873145543d7a10f", [branch: "main"]},
+  "makeup_html5": {:hex, :makeup_html5, "0.2.0", "5d9e82632d58d206e9157b62a925cb8b828382c51b0d4f4965986f873fd2ba07", [:mix], [{:makeup, "~> 0.2.0", [hex: :makeup, repo: "hexpm", optional: false]}], "hexpm", "6be48b89ab8cbadd839be82857e26448b09d5b2e0c35de41dbb5bac33e637d84"},
+  "nimble_parsec": {:hex, :nimble_parsec, "1.1.0", "3a6fca1550363552e54c216debb6a9e95bd8d32348938e13de5eda962c0d7f89", [:mix], [], "hexpm", "08eb32d66b706e913ff748f11694b17981c0b04a33ef470e33e11b3d3ac8f54b"},
+}

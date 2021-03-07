@@ -1,21 +1,13 @@
 # MakeupDemo
 
-**TODO: Add description**
+Demo project for the [`Makeup`](https://github.com/elixir-makeup/makeup) syntax highlighter.
 
-## Installation
+## Usage
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `makeup_demo` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:makeup_demo, "~> 0.1.0"}
-  ]
-end
+1. Build and run the executable.
+```shell
+mix escript.build && ./makeup_demo
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/makeup_demo](https://hexdocs.pm/makeup_demo).
+2. Open the generated webpage `website/index.html`.
 
